@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/mx/pakage/jxl/jxl.jar"/>
+	<classpathentry kind="lib" path="D:/mx/work_place/java import Excel Demo/java import Excel Demo/lib/opencsv-2.2.jar"/>
+	<classpathentry kind="lib" path="D:/mx/work_place/java import Excel Demo/java import Excel Demo/lib/poi-3.12-20150511.jar"/>
+	<classpathentry kind="lib" path="D:/mx/work_place/java import Excel Demo/java import Excel Demo/lib/poi-ooxml-3.12-20150511.jar"/>
+	<classpathentry kind="lib" path="D:/mx/work_place/java import Excel Demo/java import Excel Demo/lib/poi-ooxml-schemas-3.12-20150511.jar"/>
+	<classpathentry kind="lib" path="D:/mx/work_place/java import Excel Demo/java import Excel Demo/lib/poi-scratchpad-3.12-20150511.jar"/>
+	<classpathentry kind="lib" path="D:/mx/work_place/java import Excel Demo/java import Excel Demo/lib/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
