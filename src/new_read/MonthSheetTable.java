@@ -118,6 +118,9 @@ public class MonthSheetTable extends OutputTable{
 				if(i == 6) {
 					cell.setCellValue(str[j]);
 				}
+				if(i > 6) {
+					//cell.setCellValue(OutputTable.getElemenString(1, 10));//按照单元格赋值
+				}
 								
 			}
 		}

@@ -1,10 +1,5 @@
 package new_read;
 
-
-
-import org.apache.poi.ss.util.CellRangeAddress;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-
 import jxl.Sheet;
 import jxl.Workbook;
 
@@ -24,5 +19,8 @@ public class Table extends RowItems{
     public static int getColCount() {
     	return RowItems.getRowItemsSheet().getColumns();
     	//列数
+    }
+    public static String getMessage(int row,int col) {
+    	return RowItems.getItemInformation(row,col);
     }
 }

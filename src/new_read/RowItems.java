@@ -31,11 +31,11 @@ public class RowItems extends GetItems{
 	public Float caijiduizhangjine;//集采对账金额21
 	public String others;//备注22
 	
-	public String informationString;
+	public static String informationString;
 	
 	//getItems newItem = new getItems(); 
-	public String getItemInformation(int row, int col) {
-		this.informationString = GetItems.getSheet().getCell(row, col).getContents();
+	public static String getItemInformation(int row, int col) {
+	     informationString = GetItems.getSheet().getCell(row, col).getContents();
 		return  informationString;
 	}
 	public  static Workbook getRowItemsWorkbook() {

@@ -1,16 +1,12 @@
 package new_read;
 
-import java.awt.Font;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
 
+import org.apache.poi.hslf.dev.SlideAndNotesAtomListing;
 import org.apache.poi.hssf.usermodel.HSSFCellStyle;
 import org.apache.poi.hssf.util.CellRangeAddress;
 import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.HorizontalAlignment;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.VerticalAlignment;
@@ -18,11 +14,23 @@ import org.apache.poi.xssf.usermodel.XSSFCellStyle;
 import org.apache.poi.xssf.usermodel.XSSFFont;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
 import jxl.Sheet;
 import jxl.Workbook;
 
 public class OutputTable extends Table{
+	//获取表格信息
+	public static String[][] getExcelMessage(){
+		int row = Table.getRowcount();
+		int col = Table.getColCount();
+		String arr[][] = new String[row][col];
+		for(int i = 0; i< row;i++) {
+			for(int j = 0; j< col; j++) {
+				arr[i][j] = Table.getMessage(i, j);
+			}
+		}
+		return arr;
+		
+	}
 	
 	public static void createTable() {
 		//创建表固定的
@@ -86,4 +94,7 @@ public class OutputTable extends Table{
 		cell.setCellStyle(cellStyle2);
 		return wbWorkbook;
 	}
+    public static String getElemenString(int row,int col) {
+    	return Table.getMessage(row, col);
+    }
 }
